@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600&display=swap');
 
 body {
 	margin: 0 auto;
@@ -267,4 +267,97 @@ a {
 .achievements__item h3 {
 	padding: 25px 0;
 	color: #fff9f9;
+}
+
+/* production */
+.production__wrapper {
+	display: flex;
+	margin-top: 80px;
+}
+
+.production__card {
+	position: relative;
+	flex-basis: 25%;
+	margin: 0 15px;
+	padding: 15px;
+	border: 1px solid #b4b4b4;
+}
+
+.production__icon {
+	position: absolute;
+	left: 50%;
+    bottom: 50%;
+    top: -5px;
+    transform: translate(-50%, -50%);
+
+	width: 70px;
+	height: 70px;
+	border-radius: 50%;
+}
+
+.production__icon img {
+	padding: 10px;
+}
+
+.production__card:nth-child(1) 
+.production__icon {
+	background: linear-gradient(180deg, #23722A -15%, #459B4D 58.48%, #23722A 120.71%);
+}
+
+.production__card:nth-child(2) 
+.production__icon {
+	background: linear-gradient(180deg, #D5AB29 -15%, #DFC472 58.48%, #D5AB29 120.71%);
+}
+
+.production__card:nth-child(3) 
+.production__icon {
+	background: linear-gradient(180deg, #DC3C09 -15%, #DC3C09 -14.99%, #DB8266 57.73%, #DB3C09 120.71%);
+}
+
+.production__card:nth-child(4) 
+.production__icon {
+	background: linear-gradient(180deg, #008CDB -15%, #6CB4DA 56.23%, #028DD7 120.71%);
+}
+
+.production__number {
+	padding-top: 50px;
+	text-align: center;
+	font-size: 96px;
+	font-weight: 600;
+	line-height: 117px;
+}
+
+.production__card:nth-child(1) 
+.production__number {
+	color: rgba(182, 211, 166, 0.7);
+}
+
+.production__card:nth-child(2) 
+.production__number {
+	color: rgba(223, 196, 114, 0.7);
+}
+
+.production__card:nth-child(3) 
+.production__number {
+	color: rgba(219, 130, 102, 0.7);
+}
+
+.production__card:nth-child(4) 
+.production__number {
+	color: rgba(108, 180, 218, 0.7);
+}
+
+.production__title {
+	padding: 30px 0 15px;
+	font-size: 24px;
+	font-weight: 500;
+	line-height: 29px;
+	color: #4f4f4f;
+}
+
+.production__text {
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 20px;
+	color: #909090;
 }
