@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
 
 body {
-	margin: 0;
+	margin: 0 auto;
 	font-family: 'Montserrat', sans-serif;
 	font-style: normal;
 	font-width: normal;
@@ -117,7 +117,6 @@ a {
 	flex-direction: column;
 	justify-content: center;
 	width: 100%;
-	max-width: 1440px;
 	height: 743px;
 
 	background: url("../images/intro.svg") no-repeat center;
@@ -157,23 +156,27 @@ a {
 
 
 /* about-us */
-.about-us__content {
+.about-us__item {
 	display: flex;
 	margin-bottom: 60px;
 }
 
-.about-us__img-1, 
-.about-us__img-2 {
+.about-us__img {
 	width: 50%;
 	max-width: 544px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
 }
 
-.about-us__img-1 {
+.about-us__item:nth-child(1) .about-us__img {
 	margin-right: 60px;
-}
+	background: url(../images/about-us/about-us_jar.jpg);
+} 
 
-.about-us__img-2 {
+ .about-us__item:nth-child(2) .about-us__img {
 	margin-left: 60px;
+	background: url(../images/about-us/about-us_basket.svg);
 }
 
 .about-us__text {
@@ -187,24 +190,9 @@ a {
 	margin-top: 0;
 }
 
-.about-us__img-1 {
-	background: url(../images/about-us/about-us_jar.jpg);
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center;
-}
-
-.about-us__img-2 {
-	background: url(../images/about-us/about-us_basket.svg);
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center;
-}
-
 /* advantages */
 .advantages {
 	width: 100%;
-	max-width: 1440px;
 	background: linear-gradient(90deg, #23722A 11.56%, #459B4D 51.28%, #26762D 92.34%);
 }
 
@@ -213,7 +201,7 @@ a {
 	color: #fff8f8;
 }
 
-.advantages__inner {
+.advantages__wrapper {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
@@ -221,7 +209,7 @@ a {
 }
 
 .advantages__item {
-	width: 33.33333%;
+	width: 33.3%;
 	max-width: 340px;
 	margin: 20px;
 	text-align: center;
@@ -231,4 +219,52 @@ a {
 	font-size: 24px;
 	line-height: 29px;
 	color: #fdf8f8;
+}
+
+/* swiper */
+.swiper-container {
+	width: 100%;
+	height: 100%;
+}
+
+.swiper-slide {
+	text-align: center;
+	font-size: 18px;
+	background: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/* achievements */
+.achievements {
+	background: url("../images/achievements.svg") no-repeat center;
+	background-size: cover;
+}
+
+.achievements__wrapper {
+	display: flex;
+	justify-content: space-between;
+}
+
+.achievements__item {
+	padding: 100px 25px;
+	text-align: center;
+	color: #fff9f9;
+}
+
+.achievements__item p {
+	margin: 0;
+	font-size: 72px;
+	line-height: 88px;
+}
+
+.achievements span {
+	font-size: 24px;
+	line-height: 29px;
+}
+
+.achievements__item h3 {
+	padding: 25px 0;
+	color: #fff9f9;
 }

@@ -6,6 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="icon" type="image/png" href="images/logo.png">
 	<!-- styles.css -->
+	<link rel="stylesheet" href="style.css/swiper.min.css">
 	<link rel="stylesheet" type="text/css" href="style.css/main.css">
 	<link rel="stylesheet" type="text/css" href="style.css/layout.css">
 </head>
@@ -46,7 +47,7 @@
 			</div>
 		</div>
 	</header>
-	<div class="intro">
+	<div id="intro" class="intro">
 		<div class="container">
 			<div class="intro__inner">
 				<h1 class="intro__title">Вирощений з любов'ю, а не просто вироблений</h1>
@@ -55,58 +56,119 @@
 			</div>
 		</div>
 	</div>
-	<section class="about-us">
+
+	<section id="about-us" class="about-us">
 		<div class="container">
-			<div class="about-us__inner">
-				<h3>Про нас</h3>
-				<div class="about-us__content">
-					<div class="about-us__img-1"></div>
+			<h3>Про нас</h3>
+			<div class="about-us__content">
+				<div class="about-us__item">
+					<div class="about-us__img"></div>
 					<div class="about-us__text">
 						<p>Ми вирощуємо велику білу квасолю “Ясь королівський” в західній частині України, неподалік від міста Броди Львівської області. Це екологічно чистий продукт, який вирощено та зібрано із використанням виключно ручної праці. Це справді велика квасоля – розмір її 25-35 мм.</p>
 						<p>Наше підприємство не тільки вирощує квасолю, а й виробляє консервований “Ясь королівський” натуральний та в томаті. Компанію "Лада Органіка" було засновано 2015 року. Консервовану квасолю «Ясь Королівський» (в томаті та у своєму соці) ми виготовляємо за спеціальною рецептурою, яка зберігає натуральний смак та корисні властивості бобів.<p>
-						</div>
-					</div>
-					<div class="about-us__content">
-						<div class="about-us__text">
-							<p>З впевненістю можемо сказати, що квасоля дійсно особлива. Поживна, корисна, насичена вітамінами та цінними мікроелементами, які просто необхідні для розвитку здорового організму людини. Взагалі, на думку дієтологів, квасоля належить до десяти найкорисніших продуктів для здоров’я.</p>
-							<p>Особлива користь квасолі і її харчова цінність — у гармонійному поєднанні високоякісного білка з цукром, крохмалем, вітамінами, мінералами і незамінними амінокислотами.Щодо вітамінів, то це А, В1, В2, В6, С, РР, каротин і велика кількість вітаміну Е – природного антиоксиданту.</p>
-						</div>
-						<div class="about-us__img-2"></div>
 					</div>
 				</div>
-			</div> <!-- /container -->
-		</section> <!-- /about-us -->
-		<section class="advantages">
-			<div class="container">
-				<h3>Наші переваги</h3>
-				<div class="advantages__inner">
-					<div class="advantages__item">
-						<img src="images/advantages/quality.png" alt="Відмінна якість">
-						<p>Відмінна якість</p>
+				<div class="about-us__item">
+					<div class="about-us__text">
+						<p>З впевненістю можемо сказати, що квасоля дійсно особлива. Поживна, корисна, насичена вітамінами та цінними мікроелементами, які просто необхідні для розвитку здорового організму людини. Взагалі, на думку дієтологів, квасоля належить до десяти найкорисніших продуктів для здоров’я.</p>
+						<p>Особлива користь квасолі і її харчова цінність — у гармонійному поєднанні високоякісного білка з цукром, крохмалем, вітамінами, мінералами і незамінними амінокислотами.Щодо вітамінів, то це А, В1, В2, В6, С, РР, каротин і велика кількість вітаміну Е – природного антиоксиданту.</p>
 					</div>
-					<div class="advantages__item">
-						<img src="images/advantages/taste.png" alt="Неймовірний смак">
-						<p>Неймовірний смак</p>
-					</div>
-					<div class="advantages__item">
-						<img src="images/advantages/handmade.png" alt="Ручна праця">
-						<p>Ручна праця</p>
-					</div>
-					<div class="advantages__item">
-						<img src="images/advantages/certification.png" alt="Сертифікація">
-						<p>Сертифікація</p>
-					</div>
-					<div class="advantages__item">
-						<img src="images/advantages/product.png" alt="Екологічно чистий продукт">
-						<p>Екологічно чистий продукт</p>
-					</div>
-					<div class="advantages__item">
-						<img src="images/advantages/sizes.png" alt="Великі розміри">
-						<p>Великі розміри</p>
-					</div>
+					<div class="about-us__img"></div>
 				</div>
-			</div> <!-- /container -->
-		</section> <!-- /advantages -->
+			</div>
+		</div> <!-- /container -->
+	</section> <!-- /about-us -->
+
+	<section id="advantages" class="advantages">
+		<div class="container">
+			<h3>Наші переваги</h3>
+			<div class="advantages__wrapper">
+				<div class="advantages__item">
+					<img src="images/advantages/quality.png" alt="Відмінна якість">
+					<p>Відмінна якість</p>
+				</div>
+				<div class="advantages__item">
+					<img src="images/advantages/taste.png" alt="Неймовірний смак">
+					<p>Неймовірний смак</p>
+				</div>
+				<div class="advantages__item">
+					<img src="images/advantages/handmade.png" alt="Ручна праця">
+					<p>Ручна праця</p>
+				</div>
+				<div class="advantages__item">
+					<img src="images/advantages/certification.png" alt="Сертифікація">
+					<p>Сертифікація</p>
+				</div>
+				<div class="advantages__item">
+					<img src="images/advantages/product.png" alt="Екологічно чистий продукт">
+					<p>Екологічно чистий продукт</p>
+				</div>
+				<div class="advantages__item">
+					<img src="images/advantages/sizes.png" alt="Великі розміри">
+					<p>Великі розміри</p>
+				</div>
+			</div>
+		</div> <!-- /container -->
+	</section> <!-- /advantages -->
+
+	 <!-- Swiper -->
+	<section id="partners">
+	 	<div class="container">
+	 		<h3>Партнери</h3>
+	 		<div class="swiper-container">
+	 			<div class="swiper-wrapper">
+	 				<div class="swiper-slide">
+	 					<img src="images/partners/silpo.svg">
+	 				</div>
+	 				<div class="swiper-slide">
+	 					<img src="images/partners/furshet.svg">
+	 				</div>
+	 				<div class="swiper-slide">
+	 					<img src="images/partners/chudo-market.svg">
+	 				</div>
+	 				<div class="swiper-slide">
+	 					<img src="images/partners/digma.svg">
+	 				</div>
+	 				<div class="swiper-slide">
+	 					<img src="images/partners/silpo.svg">
+	 				</div>
+	 				<div class="swiper-slide">
+	 					<img src="images/partners/furshet.svg">
+	 				</div>
+	 				<div class="swiper-slide">
+	 					<img src="images/partners/chudo-market.svg">
+	 				</div>
+	 				<div class="swiper-slide">
+	 					<img src="images/partners/digma.svg">
+	 				</div>
+	 			</div>
+	 		</div>
+	 	</div>
+	</section>
+
+	<section class="achievements">
+		<div class="container">
+			<div class="achievements__wrapper">
+				<div class="achievements__item">
+					<p>5<span>років</span></p>
+					<h3>Якісної роботи</h3>
+				</div>
+				<div class="achievements__item">
+					<p>200<span>тонн</span></p>
+					<h3>Зібраної квасолі</h3>
+				</div>
+				<div class="achievements__item">
+					<p>12450<span>банок</span></p>
+					<h3>"Королівського Яся"</h3>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+
+
 	<script src="js/swiper.min.js"></script>
+	<script src="js/swiper-slider.js"></script>
 </body>
 </html>
