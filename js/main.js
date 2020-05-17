@@ -23,8 +23,12 @@ $(function() {
 	$("[data-scroll]").on("click", function(event) {
 		event.preventDefault();
 
+		let $this = $(this);
 		let blockId = $(this).data('scroll');
 		let blockOffset = $(blockId).offset().top - 100;
+
+		$("#nav a").removeClass("active");
+		$this.addClass("active");
 
 		$("html, body").animate({
 			scrollTop: blockOffset
