@@ -1,4 +1,18 @@
 
+.preloader-wrap {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background: #7ba97e;
+	transition: .2s;
+	z-index: 99;
+}
+
+.preloader-wrap.complete{
+	z-index: -1;
+	opacity: 0;
+}
+
 .preloader {
 	position: absolute;
 	top: 50%;
@@ -7,13 +21,18 @@
 	width: 100px;
 	height: 100px;
 	animation: animate 1s linear infinite;
+	z-index: 100;
+}
+
+.preloader.complete{
+	z-index: -1;
+	opacity: 0;
 }
 
 .preloader span {
 	position: absolute;
 	width: 50px;
 	height: 50px;
-	background: #f00;
 	animation: rotate 1s linear infinite;
 }
 

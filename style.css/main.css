@@ -5,7 +5,7 @@ body {
 	margin: 0 auto;
 	font-family: 'Montserrat', sans-serif;
 	font-style: normal;
-	font-width: normal;
+	font-weight: normal;
 	color: #000;
 }
 
@@ -45,8 +45,14 @@ section {
 	top: 0;
 	left: 0;
 	right: 0;
-	z-index: 100;
+	z-index: 98;
 	padding: 10px 0;
+}
+
+.header.open {
+	display: block;
+	background: #26762D;
+	transition: .5s;
 }
 
 .header.fixed {
@@ -65,6 +71,10 @@ section {
 	justify-content: space-between;
 }
 
+.header__inner.open {
+	display: block;
+}
+
 .header__logo {
 	display: flex;
 	justify-content: center;
@@ -80,8 +90,20 @@ a {
 /* nav */
 .nav {
 	font-weight: 500;
-	font-size: 16px;
+	font-size: 18px;
 	line-height: 20px;
+}
+
+.nav.open {
+	display: block;
+}
+
+.nav.open .nav__inner {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	line-height: 35px;
 }
 
 .nav ul {
@@ -420,26 +442,26 @@ a {
 
 /* scroll back to top */
 #back-to-top {
-    width: 40px;
-    line-height: 40px;
-    overflow: hidden;
-    z-index: 100;
-    display: none;
-    cursor: pointer;
-    transform: rotate(270deg);
-    position: fixed;
-    bottom: 50px;
-    right: 20px;
-    background-color: #ddd;
-    color: #555;
-    text-align: center;
-    font-size: 30px;
-    text-decoration: none;
+	width: 40px;
+	line-height: 40px;
+	overflow: hidden;
+	z-index: 97;
+	display: none;
+	cursor: pointer;
+	transform: rotate(270deg);
+	position: fixed;
+	bottom: 50px;
+	right: 20px;
+	background-color: #ddd;
+	color: #555;
+	text-align: center;
+	font-size: 30px;
+	text-decoration: none;
 }
 
 #back-to-top:hover {
-    background-color: #ddf;
-    color: #000;
+	background-color: #ddf;
+	color: #000;
 }
 
 /* Media request */
@@ -452,6 +474,9 @@ a {
 
 	#menu-toggle {
 		display: block;
+		position: absolute;
+		top: 1rem;
+		right: 3rem;
 	}
 	
 	/* about-us */
