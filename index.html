@@ -5,12 +5,20 @@
 	<title>Лада Органіка</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="icon" type="image/png" href="images/main-logo.png">
+	<!-- preloader -->
+	<link rel="stylesheet" href="style.css/preloader.css">
 	<!-- styles.css -->
 	<link rel="stylesheet" href="style.css/swiper.min.css">
 	<link rel="stylesheet" type="text/css" href="style.css/main.css">
 	<link rel="stylesheet" type="text/css" href="style.css/layout.css">
 </head>
 <body>
+	<div class="preloader">
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+	</div>
 	<header id="header" class="header">
 		<div class="container">
 			<div class="header__inner">
@@ -44,6 +52,8 @@
 						</li>
 					</ul>
 				</nav>
+
+				<!-- burger menu -->
 				<div id="menu-toggle">
 					<div id="hamburger">
 						<span></span>
@@ -221,65 +231,62 @@
 	<footer id="footer" class="footer">
 		<div class="container">
 			<div class="footer__wrapper">
-				<!-- <div class="footer__row"> -->
-					<div class="footer__logo">
-						<img src="images/main-logo.png" alt="logo">
+				<div class="footer__logo">
+					<img src="images/main-logo.png" alt="logo">
+				</div>
+				<div class="footer__nav">
+					<ul>
+						<li class="nav__link">
+							<a href="#">Головна</a> 
+						</li>
+						<li class="nav__link">
+							<a href="#">Про нас</a>
+						</li>
+						<li class="nav__link">
+							<a href="#">Переваги</a>
+						</li>
+						<li class="nav__link">
+							<a href="#">Партнери</a>
+						</li>
+					</ul>
+					<ul>
+						<li class="nav__link">
+							<a href="#">Виробництво</a>
+						</li>
+						<li class="nav__link">
+							<a href="#">Галерея</a>
+						</li>
+						<li class="nav__link">
+							<a href="#">Контакти</a>
+						</li>
+					</ul>
+				</div>
+				<div class="footer__info">
+					<div class="info__item">
+						<img src="images/footer/map.svg" alt="icon-map">
+						Україна, Львівська обл., м. Броди
 					</div>
-					<div class="footer__nav">
-						<ul>
-							<li class="nav__link">
-								<a href="#">Головна</a> 
-							</li>
-							<li class="nav__link">
-								<a href="#">Про нас</a>
-							</li>
-							<li class="nav__link">
-								<a href="#">Переваги</a>
-							</li>
-							<li class="nav__link">
-								<a href="#">Партнери</a>
-							</li>
-						</ul>
-						<ul>
-							<li class="nav__link">
-								<a href="#">Виробництво</a>
-							</li>
-							<li class="nav__link">
-								<a href="#">Галерея</a>
-							</li>
-							<li class="nav__link">
-								<a href="#">Контакти</a>
-							</li>
-						</ul>
+					<div class="info__item">
+						<img src="images/footer/device.svg" alt="icon-device">096 977 3030
 					</div>
-				<!-- </div>
-				<div class="footer__row"> -->
-					<div class="footer__info">
-						<div class="info__item">
-							<img src="images/footer/map.svg" alt="icon-map">
-							Україна, Львівська обл., м. Броди
-						</div>
-						<div class="info__item">
-							<img src="images/footer/device.svg" alt="icon-device">096 977 3030
-						</div>
-						<div class="info__item">
-							<img src="images/footer/envelope.svg" alt="icon-envelope">lada.organika@gmail.com
-						</div>
+					<div class="info__item">
+						<img src="images/footer/envelope.svg" alt="icon-envelope">lada.organika@gmail.com
 					</div>
-					<div class="footer__social">
-						<a href="#" target="_blank">
-							<img src="images/footer/Facebook.svg" alt="icon-facebook">
-						</a>
-						<a href="#" target="_blank">
-							<img src="images/footer/Instagram.svg" alt="icon-instagram">
-						</a>
-						<a href="#" target="_blank">
-							<img src="images/footer/messenger.svg" alt="icon-messenger">
-						</a>
-					</div>
-				<!-- </div> -->
+				</div>
+				<div class="footer__social">
+					<a href="#" target="_blank">
+						<img src="images/footer/Facebook.svg" alt="icon-facebook">
+					</a>
+					<a href="#" target="_blank">
+						<img src="images/footer/Instagram.svg" alt="icon-instagram">
+					</a>
+					<a href="#" target="_blank">
+						<img src="images/footer/messenger.svg" alt="icon-messenger">
+					</a>
+				</div>
 			</div>
 		</div>
+		<a id="back-to-top" title="Back to top" href="#">&#10148;</a>
 	</footer>
 
 
